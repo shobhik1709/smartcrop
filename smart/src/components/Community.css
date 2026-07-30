@@ -1,0 +1,86 @@
+.community-container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.chat-box {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.chat-message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.my-message {
+  background-color: #d1ffd6;
+  text-align: right;
+}
+
+.other-message {
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.chat-sender {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.chat-text {
+  margin-bottom: 5px;
+}
+
+.chat-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.delete-button-red {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 3px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button-red:hover {
+  background-color: #cc0000;
+}
+
+.chat-input-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.chat-input-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+}
+
+.chat-input-form button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.chat-input-form button:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}

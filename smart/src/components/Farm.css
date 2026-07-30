@@ -1,0 +1,129 @@
+/* Farm.css - Enhanced with RGB Professional Theme */
+:root {
+  --primary: #4CAF50;
+  --primary-dark: #2E7D32;
+  --primary-light: #80E27E;
+  --water-color: #2196F3;
+  --water-dark: #1976D2;
+  --fertilizer-color: #FF9800;
+  --fertilizer-dark: #F57C00;
+  --disease-color: #F44336;
+  --disease-dark: #D32F2F;
+  --completed-color: #9C27B0;
+  --completed-dark: #7B1FA2;
+  --weather-color: #87CEEB;
+  --weather-dark: #4682B4;
+  --resource-color: #673AB7;
+  --resource-dark: #512DA8;
+  --background: #F5F9FC;
+  --card-bg: #FFFFFF;
+  --text-dark: #263238;
+  --text-light: #78909C;
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.farm-page {
+  min-height: 100vh;
+  background: var(--background);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.farm-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.farm-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 30px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-radius: 20px;
+  color: white;
+  box-shadow: var(--shadow-lg);
+}
+
+.farm-header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #FFEB3B, #FFD600);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.farm-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Tabs */
+.farm-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+}
+
+.farm-tabs button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  background: var(--background);
+  color: var(--text-dark);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 120px;
+}
+
+.farm-tabs button.active {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.farm-tabs button:hover {
+  background: var(--primary-light);
+  color: white;
+}
+
+/* Content */
+.farm-content {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: var(--shadow-lg);
+  min-height: 500px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .farm-tabs {
+    flex-direction: column;
+  }
+  .farm-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .farm-container {
+    padding: 10px;
+  }
+  .farm-header {
+    padding: 20px;
+  }
+  .farm-content {
+    padding: 15px;
+  }
+}

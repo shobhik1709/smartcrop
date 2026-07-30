@@ -1,0 +1,150 @@
+/* ===== Container ===== */
+.reminders-section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+.reminders-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+  font-weight: 700;
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== Empty State ===== */
+.empty-state {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 40px;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  color: #555;
+  border: 2px dashed #bbb;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Grid Layout ===== */
+.reminders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* ===== Reminder Card ===== */
+.reminder-card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  text-align: left;
+  backdrop-filter: blur(15px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.reminder-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+.reminder-card.completed {
+  background: rgba(236, 253, 245, 0.9);
+  border-left: 6px solid #2ecc71;
+}
+
+/* ===== Header ===== */
+.reminder-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.reminder-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reminder-icon {
+  font-size: 1.6rem;
+}
+
+.reminder-status {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.reminder-status.pending {
+  background: #fce8e6;
+  color: #e74c3c;
+}
+
+.reminder-status.completed {
+  background: #e9f9f0;
+  color: #27ae60;
+}
+
+/* ===== Details ===== */
+.reminder-details p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* ===== Actions ===== */
+.reminder-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.complete-btn,
+.undo-btn,
+.delete-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Buttons */
+.complete-btn {
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  color: white;
+}
+
+.complete-btn:hover {
+  background: linear-gradient(90deg, #2980b9, #1f6391);
+}
+
+.undo-btn {
+  background: linear-gradient(90deg, #f39c12, #d35400);
+  color: white;
+}
+
+.undo-btn:hover {
+  background: linear-gradient(90deg, #e67e22, #c0392b);
+}
+
+.delete-btn {
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
+  color: white;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(90deg, #c0392b, #962d22);
+}

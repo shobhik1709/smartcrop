@@ -1,0 +1,37 @@
+.about-page {
+  min-height: 100vh;
+  background: #f0f7f0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.about-container {
+  max-width: 900px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-container h1 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
+}
+
+.about-section {
+  margin-bottom: 1.8rem;
+}
+
+.about-section h2 {
+  color: #388e3c;
+  margin-bottom: 0.5rem;
+}
+
+.about-section p {
+  color: #555;
+  line-height: 1.6;
+}

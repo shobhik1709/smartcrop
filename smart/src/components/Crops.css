@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f8ff;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* ✅ Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4CAF50;
+  color: white;
+  padding: 15px 40px;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffeb3b;
+  text-shadow: 0 0 5px #fff;
+}
+
+/* Main Container */
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2e7d32;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #2b532b;
+}
+
+input,
+select {
+  padding: 12px;
+  border: 1.8px solid #cce5d1;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  border-color: #4CAF50;
+  background: #f9fff9;
+}
+
+/* Button */
+button {
+  padding: 14px 25px;
+  background: #388e3c;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #2e7d32;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Results */
+#result, #weather {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f1fdf3;
+  border-left: 6px solid #2e7d32;
+  border-radius: 10px;
+  animation: slideUp 0.6s ease;
+  font-size: 15px;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0px); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
